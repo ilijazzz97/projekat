@@ -1,0 +1,426 @@
+:root {
+    --primary-color: #c02a24;
+    --secondary-color-1: #c02a24;
+    --secondary-color-2: #f6f6f6;
+    --secondary-color-3: #555555;
+    --secondary-color-5: rgba(0, 3, 40, 0.8);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    cursor: default;
+    box-sizing: border-box
+}
+
+body {
+    font-family: Lato,sans-serif;
+    overflow-x: hidden
+}
+
+header {
+    background-image: url(../Images/heroimage.jpg);
+    background-position: top;
+    background-size: cover;
+    height: 100vh;
+    color: #fff;
+    text-shadow: 0 0 3px #000
+}
+
+header nav {
+    max-width: 1350px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr
+}
+
+.navigacioni {
+    
+    background-image: linear-gradient(rgba(0, 3, 30, 0.9), rgba(0, 3, 30, 0.9));
+    padding-bottom: 20px;
+}
+
+header nav .logo {
+    margin: 20px 0 0 0
+}
+
+header nav .logo h1 {
+    font-size: 40px;
+    color: var(--primary-color)
+}
+
+header nav .logo p {
+    font-size: 18px;
+    margin: -5px 0 0 0
+}
+
+header nav .nav-bar {
+    text-align: right
+}
+
+header nav .nav-bar ul {
+    margin: 40px 0 0 0
+}
+
+header nav .nav-bar ul li {
+    display: inline-block;
+    padding: 5px 20px;
+    cursor: pointer;
+    position: relative;
+    font-size: 18px;
+}
+
+header nav .nav-bar ul li::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 2px;
+    background-color: var(--primary-color);
+    transform-origin: bottom right;
+    transform: scaleX(0);
+    transition: transform .5s ease
+}
+
+header nav .nav-bar ul li:hover::before {
+    transform-origin: bottom left;
+    transform: scaleX(1)
+}
+
+header article {
+    max-width: 1350px;
+    margin: 220px auto 0 auto
+}
+
+header article h2 {
+    font-size: 45px;
+}
+
+header article p {
+    width: 550px;
+    font-size: 20px;
+    margin: 25px 0 30px 0
+}
+
+header article button {
+    width: 300px;
+    font-size: 22px;
+    border-radius: 30px;
+    outline: 0;
+    border: none;
+    background-color: var(--primary-color);
+    color: #fff;
+    padding: 15px 0;
+    margin: 25px 0;
+    cursor: pointer;
+    border: 1px solid var(--primary-color);
+    transition: .5s;
+    box-shadow: 0 0 7px 0 #000
+}
+
+header article button:hover {
+    background-color: #fff;
+    color: var(--primary-color);
+    box-shadow: none
+}
+
+main .piro {
+    background-color: var(--secondary-color-2);
+    background-position: center;
+    background-size: cover;
+    text-align: center
+}
+
+main .piro h2 {
+    color: var(--secondary-color-1);
+    padding: 75px 0;
+    font-size: 35px;
+    font-weight: 600;
+}
+
+main .piro .pir-list {
+    margin: 0 auto;
+    max-width: 1200px;
+    width: 90%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+    grid-gap: 10px
+}
+
+main .piro .pir-list section {
+    background-color: white;
+    transition: .3s;
+    margin-right: 10px;
+}
+
+main .piro .pir-list section:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 0 5px 0 var(--secondary-color-1);
+    background-color: var(--secondary-color-5);
+}
+
+main .piro .pir-list .pir-1 .pir-image {
+    background-image: url(../Images/velikipirat.gif);
+    background-size:contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin: 0 auto
+}
+
+main .piro .pir-list .pir-2 .pir-image {
+    background-image: url(../Images/dobriduh.jpg);
+    background-size:contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin: 0 auto
+}
+
+main .piro .pir-list .pir-3 .pir-image {
+    background-image: url(../Images/mini-ninja.jpg);
+    background-size:contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin: 0 auto
+}
+
+main .piro .pir-list .pir-4 .pir-image {
+    background-image: url(../Images/pirana.jpg);
+    background-size:contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin: 0 auto
+}
+
+main .piro .pir-list .pir-5 .pir-image {
+    background-image: url(../Images/rocket-base.gif);
+    background-size:contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin: 0 auto
+}
+
+main .piro .pir-list .pir-6 .pir-image {
+    background-image: url(../Images/corona.gif);
+    background-size:contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin: 0 auto
+}
+
+main .piro .pir-list .pir-7 .pir-image {
+    background-image: url(../Images/astro.gif);
+    background-size:contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin: 0 auto
+}
+
+main .piro .pir-list .pir-8 .pir-image {
+    background-image: url(../Images/karneval.gif);
+    background-size:contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin: 0 auto
+}
+
+main .piro .pir-list section {
+   padding-top: 40px;
+}
+
+main .piro .pir-list section .pir-image {
+    width: 220px;
+    height: 330px;
+    background-color: #fff;
+    transform: none;
+    border: none;
+}
+
+main .piro .pir-list section h3 {
+    font-size: 25px;
+    padding: 10px 0;
+    color: var(--secondary-color-3);
+}
+
+main .piro .pir-list section:hover h3 {
+    font-size: 25px;
+    padding: 10px 0;
+    color: var(--secondary-color-2);
+}
+
+main .piro .pir-list section button {
+    font-size: 18px;
+    border-radius: 30px;
+    outline: 0;
+    border: none;
+    background-color: var(--secondary-color-1);
+    padding: 10px 30px;
+    margin: 25px 0;
+    cursor: pointer;
+    color: var(--secondary-color-2);
+    border: 1px solid var(--primary-color);
+    transition: .4s
+}
+
+main .piro .pir-list section button:hover {
+    color: var(--secondary-color-1);
+    background-color: var(--secondary-color-2)
+}
+
+main .piro .vidi {
+    width: 300px;
+    font-size: 21px;
+    border-radius: 30px;
+    outline: 0;
+    border: none;
+    background-color: var(--primary-color);
+    color: #fff;
+    padding: 15px 0;
+    margin: 75px 0;
+    cursor: pointer;
+    border: 1px solid var(--primary-color);
+    transition: .3s;
+    box-shadow: 0 0 5px 0 #000
+}
+
+footer {
+    color: #fff;
+    background-image: linear-gradient(to right,rgb(0, 3, 40),#150069);
+    text-shadow: 0 0 3px #000
+}
+
+footer article {
+    max-width: 980px;
+    display: flex;
+    margin: 0 auto;
+    justify-content: space-around
+}
+
+footer section {
+    margin: 25px 0 0 0
+}
+
+footer section h2 {
+    font-size: 25px;
+    margin: 50px 0 25px 0;
+    font-weight: 400
+}
+
+footer section address {
+    color: var(--primary-color)
+}
+
+footer section address i,footer section address p {
+    display: inline-block;
+    padding: 3px
+}
+
+.text-center {
+    text-align: center;
+}
+
+.pb-5 {
+    padding-bottom: 50px;
+}
+
+.pb-15 {
+    padding-bottom: 150px;
+}
+
+@media only screen and (max-width: 1300px) {
+    header nav {
+        margin:0 25px 0 25px;
+        grid-template-columns: 1fr 3fr
+    }
+
+    header article {
+        margin: 200px auto 0 25px
+    }
+}
+
+@media only screen and (max-width: 900px) {
+    header {
+        height:850px
+    }
+
+    header nav {
+        text-align: center;
+        grid-template-columns: 5fr 1fr;
+        grid-template-areas: "logo logo" "nav-bar nav-bar";
+        width: 96%;
+        margin: 0
+    }
+
+    header nav .logo {
+        grid-area: logo
+    }
+
+    header nav .nav-bar {
+        grid-area: nav-bar
+    }
+
+    header nav .nav-bar {
+        text-align: center
+    }
+
+    header nav .nav-bar ul li {
+        font-size: 22px
+    }
+
+    header article {
+        margin: 100px 0 0 25px
+    }
+
+    main .piro .pir-list .pir-3 {
+        display: none
+    }
+
+    footer section {
+        margin: 0 0 50px 0
+    }
+
+    footer section:nth-child(3) {
+        display: none
+    }
+}
+
+@media only screen and (max-width: 620px) {
+    header nav .nav-bar ul li {
+        width:200px;
+        padding: 5px 0;
+        margin: 10px
+    }
+
+    header article {
+        margin: 30px auto 0 auto;
+        text-align: center
+    }
+
+    header article h2 {
+        font-size: 35px;
+        margin: 0 0 25px 0
+    }
+
+    header article p {
+        width: 96%;
+        margin: 0 auto 25px auto;
+        font-size: 20px
+    }
+
+}
+
+@media only screen and (max-width: 450px) {
+    main .piro .pir-list .pir-2 {
+        display:none
+    }
+
+    footer {
+        margin: -25px 0 0 0
+    }
+
+    footer article {
+        display: block;
+        text-align: center;
+        padding: 5px 0
+    }
+}
